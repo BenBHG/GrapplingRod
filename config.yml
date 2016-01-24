@@ -1,0 +1,6 @@
+hook-threshold: 0.25
+horizontal-force-mult: 0.3
+horizontal-force-max: 7.5
+vertical-force-mult: 0.7
+vertical-force-bonus: 0.5
+vertical-force-max: 1.5
