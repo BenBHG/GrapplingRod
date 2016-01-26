@@ -19,12 +19,6 @@ public class GrapplingRod extends JavaPlugin implements Listener {
 	double vForceBonus;
 	double vForceMax;
 	
-	Vector vector3;
-	Entity entity;
-	Block block;
-	Player player;
-	double d;
-	
 	@Override
 	public void onEnable() {
 		FileConfiguration config;
@@ -49,6 +43,12 @@ public class GrapplingRod extends JavaPlugin implements Listener {
 	
 	@EventHandler
 	public void onPlayerFish(PlayerFishEvent event) {
+		Vector vector3;
+		Entity entity;
+		Block block;
+		Player player;
+		double d;
+		
 		if (event.getState().equals(PlayerFishEvent.State.IN_GROUND) || event.getState().equals(PlayerFishEvent.State.FAILED_ATTEMPT)) {
 			entity = event.getHook();
 			block = entity.getWorld().getBlockAt(entity.getLocation().add(0.0, -hookThreshold, 0.0));
