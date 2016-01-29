@@ -41,7 +41,7 @@ public class GrapplingRod extends JavaPlugin implements Listener {
 		
 	}
 	
-	@EventHandler
+	@EventHandler(ignoreCancelled = true)
 	public void onPlayerFish(PlayerFishEvent event) {
 		Vector vector3;
 		Entity entity;
