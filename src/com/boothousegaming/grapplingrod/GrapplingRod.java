@@ -1,4 +1,4 @@
-package com.darkbytelabs.grapplingrod;
+package com.boothousegaming.grapplingrod;
 
 import org.bukkit.block.Block;
 import org.bukkit.configuration.file.FileConfiguration;
